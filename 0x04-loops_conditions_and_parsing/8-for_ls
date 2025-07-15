@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Script to list files and print part after first dash
+
+for file in *; do
+    # Skip hidden files (those starting with .) automatically by using *
+    # Extract part after first dash
+    echo "${file#*-}"
+done
